@@ -22,28 +22,41 @@ header .container{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 75px;
+  padding: 0 20px
 }
 
 header .logo{
   color: var(--verde);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 40px
-
+  font-size: 40px;
 }
 
 header nav a{
   text-decoration: none;
-  color: #aaa;
+  color: white;
   margin-right: 15px;
   cursor: pointer;
 }
 
 header nav a:hover{
-  color:#fff;
+  color: var(--verde);
+}
+
+header nav .btnChange {
+  margin-left: 40px;
+  background-color: var(--verde);
+  padding: 10px;
+  border-radius: 7%;
+  color: var(--preta);
+}
+
+header nav .btnChange:hover{
+  color: var(--preta);
 }
 
 .dark-btn-mode {
-  background-color: white;
+  background-color: #6c808a;
   color: black;
 }
 
@@ -51,7 +64,7 @@ header nav a:hover{
 
 .filme-principal {
   font-size: 16px;
-  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5) 100%), url(/src/capa-house-of-cards.jpg);
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5) 100%), url(../src/fundoHalo.jpg);
   height: 400px;
   background-size: cover;
   display: flex;
@@ -92,8 +105,7 @@ header nav a:hover{
 }
 
 .botao:hover{
-  color: black;
-  background-color: white;
+  color: var(--verde);
 }
 
 .filme-principal button i{
